@@ -1,0 +1,26 @@
+{
+    "geode": 1,
+    "version": "v1.0.0",
+    "id": "com.hjfod.small_enhancements",
+    "name": "Small Enhancements",
+    "developer": "HJfod",
+    "description": "",
+    "details": null,
+    "credits": null,
+    "settings": {
+        "borderless-fullscreen": {
+            "type": "bool",
+            "name": "Borderless fullscreen",
+            "value": {
+                "default": false
+            }
+        }
+    },
+    "binary": "SmallEnhancements",
+    "dependencies": [
+        {
+            "id": "com.geode.api",
+            "required": true
+        }
+    ]
+}
