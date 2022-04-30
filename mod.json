@@ -1,6 +1,6 @@
 {
     "geode": 1,
-    "version": "v1.0.0",
+    "version": "v0.1.1",
     "id": "com.hjfod.small_enhancements",
     "name": "Small Enhancements",
     "developer": "HJfod",
@@ -21,5 +21,6 @@
             "id": "com.geode.api",
             "required": true
         }
-    ]
+    ],
+    "unloadable": true
 }
