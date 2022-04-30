@@ -93,6 +93,15 @@ GEODE_API bool GEODE_CALL geode_load(Mod* mod) {
 	if (r && r.value()) {
 		goBorderless();
 	}
+	return true;
+}
+
+GEODE_API void GEODE_CALL geode_unload() {
+	auto r = Mod::get()->getSettingValue<bool>("borderless-fullscreen");
+	if (r && r.value()) {
+		leaveBorderless();
+	}
+	g_patches.clear();
 }
 
 GEODE_API void GEODE_CALL geode_setting_updated(const char* key, Setting* setting) {
