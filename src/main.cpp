@@ -88,6 +88,13 @@ class $modify(LoadingLayer) {
 	}
 };
 
+GEODE_API bool GEODE_CALL geode_load(Mod* mod) {
+	auto r = mod->getSettingValue<bool>("borderless-fullscreen");
+	if (r && r.value()) {
+		goBorderless();
+	}
+}
+
 GEODE_API void GEODE_CALL geode_setting_updated(const char* key, Setting* setting) {
 	if (std::string(key) == "borderless-fullscreen") {
 		auto v = as<BoolSetting*>(setting)->getValue();
